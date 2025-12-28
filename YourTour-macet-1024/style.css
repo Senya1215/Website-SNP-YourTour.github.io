@@ -1,0 +1,1099 @@
+/*По умолчанию*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9F7F4;
+    width: 1024px;
+    color: black;
+    height: 9785px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+/*Меню, шапка сайта*/
+.banner {
+    background: url(../materials/header-img.png) no-repeat;
+    width: 1024px;
+    height: 831px;
+    background-position: center center;
+}
+
+.hapca {
+    width: 1024px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    width: 910px;
+    height: 30.24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+header nav ul li a{
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+header .phone a{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.banner .face {
+    text-align: center;
+    color: #fff;
+}
+
+.banner .face h1 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 109px;
+    letter-spacing: 2%;
+    width: 914px;
+    height: 315px;
+    margin: 119px auto 50px auto;
+}
+
+.banner .face p {
+    font-size: 20px;
+    font-weight: 400;
+    width: 442px;
+    height: 56px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0px auto 50px auto;
+}
+
+.banner .face a {
+    color: black;
+    background: #fff;
+    width: 118px;
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 142%;
+    letter-spacing: -1%;
+    transition: all 500ms ease;
+}
+
+.banner .face a:hover {
+    cursor: pointer;
+    background: #EFA501;
+}
+
+.banner .face a:active {
+    background: #F8E6BE;
+}
+
+
+
+/*Выбери свой тур*/
+
+.tour {
+    height: 1871px; 
+    margin-top: 135px;
+    margin-bottom: 135px;
+}
+
+.tour .text1 {
+    width: 700px;
+    height: 142px;
+    margin: 0 auto 100px auto;
+}
+
+.tour .text1 h2 {
+    text-align: center;
+    font-size: 59px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    line-height: 124%;
+    letter-spacing: 0%;
+}
+
+.tour .text1 .category {
+    width: 700px;
+    height: 34px;
+}
+
+.tour nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 122%;
+}
+
+.tour nav ul li {
+    color: black;
+        
+}
+
+.tour nav ul li:hover {
+    border-bottom: 2px solid black; 
+    cursor: pointer;   
+}
+
+.tour nav ul li:active {
+    color: #EFA501;
+    border-bottom: 2px solid #EFA501;
+}
+
+.line1, .line2, .line3 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 53px;
+    padding-right: 53px;
+}
+
+.line1, .line2 {
+    margin-bottom: 18px;
+}
+
+.tours-1, .tours-2, .tours-3, .tours-4, .tours-5, .tours-6 {
+    width: 450px;
+    height: 531px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tours-1 .img, .tours-2 .img, .tours-3 .img, .tours-4 .img, .tours-5 .img, .tours-6 .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    transition: 300ms ease;
+}
+
+.tours-1::after, .tours-2::after, .tours-3::after,
+.tours-4::after, .tours-5::after, .tours-6::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(360deg,rgba(0, 0, 0, 0.4) 0%,rgba(0, 0, 0, 0.06) 48.44%,rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tours-1:hover .img, .tours-2:hover .img, .tours-3:hover .img, .tours-4:hover .img, .tours-5:hover .img, .tours-6:hover .img {
+    transform: scale(1.2);
+}
+
+.tours-1 .price, .tours-2 .price, .tours-3 .price, .tours-4 .price, .tours-5 .price, .tours-6 .price {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 350px;
+    height: 83px;
+    color: white;
+    z-index: 2;
+}
+
+.tours-1 .price h3, .tours-2 .price h3, .tours-3 .price h3, .tours-4 .price h3, .tours-5 .price h3, .tours-6 .price h3 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 122%;
+}
+
+.tours-1 .price p, .tours-2 .price p, .tours-3 .price p, .tours-4 .price p, .tours-5 .price p, .tours-6 .price p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 142%;
+}
+
+.tours-1 button, .tours-2 button, .tours-3 button, .tours-4 button, .tours-5 button, .tours-6 button {
+    position: absolute;
+    bottom: 50px;
+    left: 35px;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 199px;
+    height: 42px;
+    color: white;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.tours-1 button img, .tours-2 button img, .tours-3 button img, .tours-4 button img, .tours-5 button img, .tours-6 button img {
+    width: 22px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+.tours-1:hover button, .tours-2:hover button, .tours-3:hover button, .tours-4:hover button, .tours-5:hover button, .tours-6:hover button {
+    background: #286562;
+}
+
+.tours-1 button:active, .tours-2 button:active, .tours-3 button:active,  .tours-4 button:active, .tours-5 button:active, .tours-6 button:active {
+    background: #EFA501;
+}
+
+/*Собери свой тур*/
+
+.create-tour {
+    height: 1225px;
+    box-sizing: border-box;
+    padding-left: 53px;
+    padding-right: 53px;
+}
+
+.create-tour .text2 {
+    width: 458px;
+    height: 159px;
+    margin: 0 auto 100px auto;
+}
+
+.create-tour .text2 h2 {
+    text-align: center;
+    font-size: 59px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 124%;
+}
+
+.create-tour .text2 p {
+    color: #A6A6A6;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 142%;
+}
+
+.create-tour .fields {
+    box-sizing: border-box;
+    width: 918px;
+    height: 966px;
+    border-radius: 50px;
+    padding: 60px;
+    background: #FFFFFF;
+}
+
+.create-tour .fields .inline {
+    width: 798px;
+    height: 104px;
+    display: flex;
+    margin-bottom: 33px;
+    gap: 20px;
+}
+
+.create-tour .where-tour select{
+    border: none;
+    background: none;
+    background-color: #F9F7F4;
+    border: 1px solid #F4F0E9;
+    display: block;
+    width: 389px;
+    height: 68px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 8px;
+    color: #A6A6A6 ;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../materials/list-strelca.png);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+}
+
+.create-tour .where-tour select:hover {
+    background-color: #F4F0E9;
+}
+
+.create-tour .where-tour select:focus {
+    border: 1px solid #A6A6A6;
+}
+
+.create-tour label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+.create-tour input {
+    box-sizing: border-box;
+    background-color: #F9F7F4;
+    border: 1px solid #F4F0E9;
+    display: block;
+    width: 389px;
+    height: 68px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.create-tour input:hover {
+    background-color: #F4F0E9;
+}
+
+.create-tour input:focus {
+    border: 1px solid #A6A6A6;
+}
+
+.create-tour input::placeholder {
+    color: #A6A6A6;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.create-tour .fields form textarea {
+    box-sizing: border-box;
+    background: #F9F7F4;
+    border-radius: 10px;
+    border: 1px solid ;
+    border-color: #F4F0E9;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    padding: 20px;
+    outline: none;
+    margin-top: 8px;
+    resize: none;
+    height: 152px;
+    margin-bottom: 33px;
+    width: 798px;
+}
+
+.create-tour .fields form textarea:hover {
+    background-color: #F4F0E9;
+}
+
+.create-tour .fields form textarea:focus {
+    border: 1px solid #A6A6A6;
+}
+
+.create-tour form .radio {
+    width: 798px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 33px;   
+}
+
+.create-tour form .radio p {
+    width: 798px;
+    height: 28px;
+    margin-bottom: 8px;
+}
+
+.create-tour form .radio .btr {    
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    width: 166px;
+    height: 28px;
+}
+
+.create-tour form .radio .btr label {
+    display: flex;
+    gap: 11px;
+}
+
+.create-tour form .radio .btr input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.create-tour form .radio .btr input[type="radio"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #1B1F2B;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.create-tour form .radio .btr input[type="radio"]::after {
+    content: '';
+    position: absolute;
+    top: 7px;     
+    left: 7px;    
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #1B1F2B;
+    opacity: 0;
+    transition: opacity 0.2s;
+    box-sizing: border-box;
+}
+
+.create-tour form .radio .btr input[type="radio"]:checked::after {
+    opacity: 1;
+}
+
+.create-tour form .contract {
+    width: 556px;
+    height: 26px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 33px 0;
+    gap: 11px;
+}
+
+.create-tour form .contract input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.create-tour form .contract input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #1B1F2B;
+    border-radius: 20%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.create-tour form .contract input[type="checkbox"]::after {
+    content: url(../materials/Rectangle\ 36\ \(Stroke\).png);
+    position: absolute;
+    background-position: center;    
+    left: 6.59px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    box-sizing: border-box;
+}
+
+.create-tour form .contract input[type="checkbox"]:checked::after {
+    opacity: 1;
+}
+
+.create-tour form .contract p {
+    height: 24px;
+    color: #A6A6A6;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 142%;
+    letter-spacing: -1%;
+}
+
+.create-tour form .contract p span {
+    color: black;
+}
+
+.create-tour form .contract p span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.create-tour form .contract p span:active {
+    color: #286562;
+}
+
+.create-tour form .btrs {
+    width: 500px;
+    height: 58px;
+    gap: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-tour form .btrs a {
+    width: 235px;
+    height: 58px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
+    border-radius: 10px;
+    background: #286562;
+    color: white;
+    text-align: center;
+    line-height: 58px;
+}
+
+.create-tour form .btrs a:hover {
+    background: #3B7E7B;
+}
+
+.create-tour form .btrs a:active {
+    background: #627F7E;
+}
+
+.create-tour form .btrs .reset {
+    border: none;
+    background: none;
+    width: 235px;
+    height: 58px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
+    border-radius: 10px;
+    background: #E0F0E5;
+    color: #286562;
+}
+
+.create-tour form .btrs .reset:hover {
+    background: #F1F3F2;
+    cursor: pointer;
+}  
+
+.create-tour form .btrs .reset:active {
+    background: #D9DFDB;
+}
+
+input[type="radio"] {
+   accent-color: black; 
+}
+
+input[type="checkbox"] {
+    accent-color: transparent;
+    color: black;
+}
+
+/*Отзывы*/
+
+.reviews { 
+    width: 1024px;
+    height: 1173px;
+    margin-top: 135px;
+    margin-bottom: 135px;
+}
+
+.reviews .text3 {
+    width: 529px;
+    height: 232px;
+    margin: 0 auto 100px auto;
+}
+
+.reviews .text3 h2 {
+    width: 529px;
+    height: 146px;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews .text3 p {
+    width: 418px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: #A6A6A6;
+    margin: 0 auto;
+}
+
+.card-review { 
+    display: flex;
+    height: 841px;
+    padding-left: 53px;
+    padding-right: 53px;
+    justify-content: space-between;
+}
+
+.card-review .card1, .card-review .card2 {
+    box-sizing: border-box;
+    width: 450px;
+    height: 841px;
+    border-radius: 50px;
+    background: #F4F0E9;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.card-review .card1 p {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 122%;
+    width: 370px;
+    height: 308px;
+    margin-bottom: 308px;
+}
+
+.card-review .card2 p {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 122%;
+    width: 370px;
+    height: 616px;
+}
+.card-review .card-person {
+    width: 370px;
+    height: 145px;
+    padding-top: 70px;
+    display: flex;
+}
+
+.card-person .person {
+    width: 295px;
+    height: 75px;
+}
+
+.card-person .person h3 {
+    font-size: 35px;
+    font-weight: 500;
+    width: 295px;
+    height: 43px;
+    line-height: 122%;
+    margin-bottom: 8px;
+}
+
+.card-person .person p {
+    font-size: 17px;
+    font-weight: 400;
+    width: 295px;
+    height: 24px;
+    line-height: 142%;
+    color: #A6A6A6;
+}
+
+.card-person img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+}
+
+
+
+/*Путешествия*/
+
+.gallery {
+    width: 1024px;
+    height: 1222px;
+
+}
+
+.gallery .text4 {
+    width: 723px;
+    height: 159px;
+    margin: 0 auto 100px auto;
+}
+
+.gallery .text4 h2 {
+    width: 732px;
+    height: 73px;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery .text4 p {
+    width: 418px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: #A6A6A6;
+    margin: 0 auto;
+}
+
+.gallery .gallery-img {
+    box-sizing: border-box;
+    width: 1024px;
+    height: 963px;
+    padding: 0 20px;
+}
+
+.gallery-img .gallery-line, .gallery-img .gallery-line2, .gallery-img .gallery-line3 {
+    display: flex;
+    width: 984px;
+    height: 301px;
+    gap: 20px;
+}
+
+.gallery-img .gallery-line, .gallery-img .gallery-line2 {
+    margin-bottom: 30px;
+}
+
+.gallery-line .img1, .gallery-line3 .img3-1{
+    width: 314.67px;
+    height: 300px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.gallery-line .img2, .gallery-line3 .img3-2, .gallery-line3 .img3-3 {
+    width: 314.67px;
+    height: 301px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.gallery-line2 .img1-1{
+    
+    width: 231px;
+    height: 301px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+/*Истории*/
+
+.histiry {
+    width: 1024px;
+    height: 2060px;
+    margin-top: 135px;
+    margin-bottom: 135px;
+}
+
+.histiry .text5 {
+    width: 615px;
+    height: 159px;
+    margin: 0 auto 100px auto;
+}
+
+.histiry .text5 h2 {
+    width: 615px;
+    height: 73px;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.histiry .text5 p {
+    width: 418px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: #A6A6A6;
+    margin: 0 auto;
+}
+
+.histiry .stories {
+    padding-left: 53px;
+    padding-right: 53px;
+    width: 1024px;
+    height: 1801px;
+
+}
+
+.card-stories1, .card-stories2, .card-stories3 {
+    cursor: pointer;
+    width: 918px;
+    height: 567px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-stories1,.card-stories2 {
+    margin-bottom: 50px;
+}
+
+.card-stories1 .img, .card-stories2 .img, .card-stories3 .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 300ms ease;
+}
+
+.card-stories1::after, .card-stories2::after, .card-stories3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+    z-index: 1;
+} 
+
+
+.card-stories1:hover .img, .histiry .card-stories2:hover .img, .histiry .card-stories3:hover .img {
+    transform: scale(1.2);
+}
+
+.histiry .story {
+    position: absolute;
+    width: 918px;
+    height: 394px;
+    top: 60px;
+    left: 60px;
+    color: white;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.histiry .story h3 {
+    width: 554px;
+    height: 43px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 122%;
+    margin-bottom: 37px;
+}
+
+.histiry .story p {
+    width: 554px;
+    height: 112px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+.histiry .stories .card-stories1 .story ul {
+    outline: none;
+    padding-left: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+.histiry .card-footer{
+    position: absolute;
+    width: 918px;
+    height: 88px;
+    top: 479px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.histiry button {
+    background: none;
+    border: none;    
+    border-radius: 50px;
+    font-size: 23px;
+    font-weight: 700; 
+    width: 199px;
+    height: 42px;
+    color: #fff;
+    padding: 7 20px;
+    right: 20px;
+    bottom: 7px;
+    line-height: 122%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.histiry button img {
+    width: 22px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+.histiry .card-stories1:hover button, .histiry .card-stories2:hover button, .histiry .card-stories3:hover button {
+    background: #286562;
+}
+
+.histiry .card-stories1 button:active, .histiry .card-stories2 button:active, .histiry .card-stories3 button:active {
+    background: #EFA501;
+}
+
+.histiry .card-footer ul{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    width: 311px;
+    height: 28px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
+    color: #fff;
+}
+
+.histiry .card-footer ul li a{
+    color: white;
+}
+
+.histiry .card-stories1 .card-footer ul li:hover, .histiry .card-stories2 .card-footer ul li:hover, .histiry .card-stories3 .card-footer ul li:hover{
+    border-bottom: 1px solid #fff;
+}
+
+/*Конец*/
+
+.the-end {
+    width: 771px;
+    height: 370px;
+    gap: 30px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.the-end img {
+    width: 370px;
+    height: 370px;
+    border-radius: 50px;
+}
+
+.the-end .text6 {
+    width: 371px;
+    height: 162px;
+    margin: auto 0;
+}
+
+.the-end .text6 h3 {
+    width: 371px;
+    height: 86px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 122%;
+}
+
+.the-end .text6 p {
+    width: 364px;
+    height: 56px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
+    color: #A6A6A6;
+}
+
+.the-end .text6 p a {
+    color: black;
+}
+
+.the-end .text6 p a:hover {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.the-end .text6 p a:active {
+    border-bottom: 1px solid #286562;
+    color: #286562;
+}
+
+/*Подвал*/
+
+footer {
+    margin-top: 135px;
+    width: 1024px;
+    height: 88px;
+    background: #F4F0E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .foot {
+    display: flex;
+    width: 918px;
+    height: 28px;
+    justify-content: space-between;
+    align-items: center;
+    color: #A6A6A6;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
+
+}
+
+footer .foot .social-network {
+    color: black;
+    width: 408px;
+    height: 28px;
+    display: flex;
+    gap: 25px;
+}
+
+footer .foot .social-network .telegram, footer .foot .social-network .facebook, footer .foot .social-network .vkontakte {
+    display: flex;
+    gap: 10px;
+}
+
+footer a:hover {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+footer a:active {
+    color: #EFA501;
+    border-bottom: 1px solid #EFA501;
+}
+
+.foot a{
+    color: black;
+}
