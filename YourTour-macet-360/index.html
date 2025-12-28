@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../materials/фавиконка.png">
+</head>
+<body>
+    <div class="banner">
+        <div class="hapca">
+            <header>
+                <div>
+                <a href="#" onclick="return false">
+                    <img src="../materials/YourTour.svg" alt=""></a>
+                </div>
+
+                <div class="phone">
+                    <a href="tel:">+7 999 999 99 99</a>
+                </div>
+            </header>
+        </div>
+   
+        <div class="face">
+            <h1>Идеальные путешествия существуют</h1>
+            <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+            <a href="">Найти тур</a>
+        </div>
+    </div>
+
+    <div id="anchor" class="tour">
+        <div class="text1">
+            <h2>Выбери свой тур</h2>
+            <div class="category">
+            <nav class="line-1">
+                <ul>
+                    <li>Популярные</li>
+                    <li>Авторские</li>
+                    <li>Походы</li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul>
+                    <li>Сплавы</li>
+                    <li>Велопрогулки</li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+
+        <div class="container line">
+            <div class="tours-1">
+                <img class="img" src="../materials/tours-1.jpg" alt="">
+                <div class="price">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                </div>
+                    <button>Подробнее<img src="../materials/strelca.png" alt=""></button>
+            </div>
+
+            <div class="tours-2">
+                <img class="img" src="../materials/tours-2.jpg" alt="">
+                <div class="price">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                </div>
+                <button>Подробнее<img src="../materials/strelca.png" alt=""></button>
+            </div>
+
+            <div class="tours-3">
+                <img class="img" src="../materials/tours-3.png" alt="">
+                <div class="price">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                </div>
+                <button>Подробнее<img src="../materials/strelca.png" alt=""></button>
+            </div>
+
+            <div class="tours-4">
+                <img class="img" src="../materials/tours-4.jpg" alt="">
+                <div class="price">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                </div>
+                <button>Подробнее<img src="../materials/strelca.png" alt=""></button>
+            </div>
+
+            <div class="tours-5">
+                <img class="img" src="../materials/tours-5.jpg" alt="">
+                <div class="price">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                </div>
+                <button>Подробнее<img src="../materials/strelca.png" alt=""></button>
+            </div>
+
+            <div class="tours-6">
+                <img class="img" src="../materials/tours-6.jpg" alt="">
+                <div class="price">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                </div>
+                <button>Подробнее<img src="../materials/strelca.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container create-tour">
+        <div class="text2">
+            <h2>Собери свой тур</h2>
+            <p>Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров</p>
+        </div>
+
+        <div class="fields">
+            <form>
+                <div>
+                    <label>Имя</label>
+                    <input type="text" placeholder="Введите Ваше имя">
+                </div>
+                <div class="where-tour">
+                    <label>Направления</label>
+                    <select>
+                        <option disabled selected hidden>Куда хотите ехать</option>
+                        <option>Стамбул</option>
+                        <option>Байкал</option>
+                        <option>Швецария</option>
+                        <option>Финляндия</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="example@mail.com">
+                </div>
+
+                <div>
+                    <label>Телефон</label>
+                    <input type="tel" id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                    <script src="https://unpkg.com/inputmask@5.0.6/dist/inputmask.min.js"></script>
+                    <script>
+                    Inputmask("+ 7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9").mask(document.getElementById('phone'));
+                    </script>
+                </div>
+
+                <div class="inline">
+                    <div>
+                        <label>Дата от</label>
+                        <input type="text" id="dateOnlyMask" placeholder="ДД.ММ.ГГГГ">
+                        <script src="https://unpkg.com/inputmask@5.0.6/dist/inputmask.min.js"></script>
+                        <script>
+                        Inputmask("99.99.9999").mask('#dateOnlyMask');
+                        </script>
+                    </div>
+
+                    <div>
+                        <label>Дата до</label>
+                        <input type="text" id="dateOnlyMask" placeholder="ДД.ММ.ГГГГ">
+                        <script src="https://unpkg.com/inputmask@5.0.6/dist/inputmask.min.js"></script>
+                        <script>
+                        Inputmask("99.99.9999").mask('#dateOnlyMask');
+                        </script>
+                    </div>
+                </div>
+
+                <label>Комментрарий</label>
+                <textarea class="line"></textarea>
+
+                <div class="radio">
+                    <p>Вам есть 18 лет?</p>
+                    <div class="btr">
+                    <label>
+                        <input type="radio" name="devilery" value="yes">
+                        Да
+                    </label>
+                    <label>                    
+                        <input type="radio" name="devilery" value="no">
+                        Нет
+                    </label>
+                    </div>
+                </div>
+
+                <div class="contract">
+                    <label>
+                        <input type="checkbox"> </label>
+                        <p>Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span></p> 
+                </div>
+
+                <div class="btrs">
+                    <a href="#anchor">Найти тур</a>
+                    <button class="reset" type="reset">Сбросить</button>
+                </div>
+            </form>
+        </div>
+    </div> 
+
+    <div class="reviews">
+        <div class="text3">
+          <h2>Отзывы наших путешественников</h2>
+          <p>Идейные соображения высшего порядка, <br>а также рамки и место обучения кадров</p>  
+        </div>
+
+        <div class="card-review">
+            <div class="card1">
+                <p><b>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</b></p>
+                <div class="card-person">
+                    <div class="person">
+                        <h3>Мария</h3>
+                        <p>Тур: Вдали от дома </p>
+                    </div>
+                    <img src="../materials/review photo-maria.jpg" alt="">
+                </div>
+            </div>
+            <div class="card2">
+                <p><b>Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. <br><br>
+                Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</b></p>
+                <div class="card-person">
+                    <div class="person">
+                        <h3>Павел</h3>
+                        <p>Тур: Путешествие в горы</p>
+                    </div>
+                    <img src="../materials/review photo-pavel.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="text4">
+            <h2>Фотографии путешествий</h2>
+            <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+        </div>
+
+       <div class="gallery-img">
+            <div class="gallery-line">
+                <img class="img1" src="../materials/gallery1-1.jpg" alt="">
+                <img class="img1" src="../materials/gallery1-4.jpg" alt="">
+            </div>
+
+            <div class="gallery-line2">
+                <img class="img1-1" src="../materials/gallery2-1.jpg" alt="">
+                <img class="img1-1" src="../materials/gallery2-4.png" alt="">
+                <img class="img1-1" src="../materials/gallery3-4.jpg" alt="">
+            </div>
+
+            <div class="gallery-line3">
+                <img class="img3-1" src="../materials/gallery2-5.jpg" alt="">
+                <img class="img3-1" src="../materials/gallery3-1.jpg" alt="">  
+            </div>
+        </div>
+    </div>
+
+    <div class="histiry">
+        <div class="text5">
+           <h2>Истории путешествий</h2> 
+           <p>Идейные соображения высшего порядка,
+а также рамки и место обучения кадров</p>
+        </div>
+
+        <div class="container stories">
+            <div class="card-stories1">
+                <img class="img" src="../materials/journey1.jpg" alt="">
+                <div class="story">    
+                    <h3>Автостопом <br> в Стамбул</h3>
+                    <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:
+                        <ul>
+                            <li>вкусная еда</li>
+                            <li>дешевый транспорт</li>
+                            <li>красивый город.</li>
+                        </ul>
+                    </p>
+                </div>
+                <button>Подробнее<img src="../materials/strelca.png" alt=""></button>
+            </div>
+
+            <div class="card-stories2">
+                <img class="img" src="../materials/journey2.jpg" alt="">
+                <div class="story">   
+                    <h3>Автостопом в Стамбул</h3>
+                    <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:
+                    </p>
+                </div>
+                <button>Подробнее<img src="../materials/strelca.png" alt=""></button>
+            </div>
+
+            <div class="card-stories3">
+                <img class="img" src="../materials/journey23.jpg" alt="">
+                <div class="story">
+                    <h3>Автостопом в Стамбул</h3>
+                    <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:
+                    </p>
+                </div>
+                
+                <button>Подробнее<img src="../materials/strelca.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="the-end">
+        <img src="../materials/the-and.jpg" alt="">
+
+        <div class="text6">
+            <h3>Пора в путешествие вместе с нами!</h3>
+            <p>Напиши на почту и узнай подробности на <a href="mailto:">yourtour@gmail.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <p class="p-foot">Наши социальные сети</p>
+            <div class="social-network">
+                <div class="telegram">
+                    <img src="../materials/telegram.png" alt=""> 
+                    <a href="https://web.telegram.org/">telegram</a>
+                </div>
+
+                <div class="facebook">
+                    <img src="../materials/fb.png" alt=""> 
+                    <a href="http://www.facebook.fr/">facebook</a>
+                </div>
+
+                <div class="vkontakte">
+                    <img src="../materials/vk.png" alt=""> 
+                    <a href="https://vk.com/">vkontakte</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
